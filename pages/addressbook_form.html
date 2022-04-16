@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/addressbook_form.css">
+    <script  src="/js/addressbook.js"></script>
+    <script src="/js/addressbook_form.js"></script>
     <title>Address Book</title>
 </head>
 <body>
@@ -37,7 +39,7 @@
               <div class="row-content">
                 <label class="label text" for="address">Address</label>
                 <textarea class="input" id="address" name="Address" style="height: 100px;" required></textarea>
-                <error-output class="address-error" for="address"></error-output>
+                <error-output id="address-error" class="address-error" for="address"></error-output>
               </div>
 
               <div class="row-content-exp">

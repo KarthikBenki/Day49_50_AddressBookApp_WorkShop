@@ -114,6 +114,7 @@ body {
 .row-content-exp{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding-right:  140px; 
     padding-left:  140px; 
     flex-direction: row;
@@ -130,7 +131,7 @@ body {
     align-items: flex-start;
     flex-direction: column;
     margin-bottom: 20px;
-    border: 0px solid green;
+    border: px solid green;
 }
 
 .text{
@@ -156,6 +157,13 @@ body {
     resize: vertical;
     border: 1px solid #BDBDBD;
     opacity: 1;
+}
+
+error-output{
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
 }
 
 .select-input{
