@@ -22,7 +22,7 @@
     </header>
 
     <div class="form-content">
-        <form action="#" class="form">
+        <form action="#" class="form" onsubmit="save(event)">
             <div class="form-head-content">
                 <div class="form-head">Person Address Form</div>
                 <div class="form-logo-content">
@@ -124,8 +124,8 @@
                 `
               </div>
               <div class="add-reset">
-                <button type="submit" class="button addButton" id="addButton">Add</button>
-                <button type="button" onclick="resetForm()" class="resetButton button">Reset</button>
+                <button type="submit" class="button addButton" id="addButton" >Add</button>
+                <button type="reset" onclick="resetForm()" class="resetButton button">Reset</button>
               </div>
         </form>
     </div>
