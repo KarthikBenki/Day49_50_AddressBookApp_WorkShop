@@ -43,19 +43,20 @@ class Contact{
 
     set address(address)
     {
-        let words = address.split(" ");
-        if(words.length>1){
-            let addressRegex = RegExp('^[A-Za-z,/.0-9]{3,}$');
-            for(const word of words){
-                if(!addressRegex.test(word))
-                throw 'Address Invalid';
-            }
-            this._address = address;
-        }
-        else{
-            throw 'Address Invalid';
-        }
-        // this._address=address;
+        // let words = address.split(" ");
+        // if(words.length>1){
+        //     // let addressRegex = RegExp('^[A-Za-z,/.0-9]{3,}$');
+        //     let addressRegex = RegExp('^[A-Za-z,/.0-9]{3,}$');
+        //     for(const word of words){
+        //         if(!addressRegex.test(word))
+        //         throw 'Address Invalid';
+        //     }
+        //     this._address = address;
+        // }
+        // else{
+        //     throw 'Address Invalid';
+        // }
+        this._address=address;
     }
 
     get city(){
@@ -121,7 +122,8 @@ class Contact{
 
     set email(email)
     {
-        let emailRegex = RegExp('/[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm');
+        // let emailRegex = RegExp('/[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm');
+        let emailRegex = RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
         if(emailRegex.test(email))
         this._email = email;
         else
